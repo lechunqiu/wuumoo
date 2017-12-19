@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>青年社区</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<!--<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：通用页头
+       -->
+
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a href="index.html"><img v-bind:src="logo_img_src" src="img/top_logo.png" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select>
+						<option>
+							上海
+						</option>
+						<option>
+							杭州
+						</option>
+						<option>
+							苏州
+						</option>
+						<option>
+							北京
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="woyaozufang.html">我要租房</a>
+						</li>
+						<li class="nav_active">
+							<a href="qingnianshequ.html">青年社区</a>
+						</li>
+						<li>
+							<a href="fangwutuoguan.html">房屋托管</a>
+						</li>
+						<li>
+							<a href="wuyehezuo.html">物业合作</a>
+						</li>
+						<li>
+							<a href="jingcaishenghuo.html">精彩生活</a>
+						</li>
+						<li>
+							<a href="guanyuwumo.html">关于梧陌</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<a href="####">
+						个人中心
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg" />
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：青年社区banner
+       -->
+		<div class="width_big qnsq_banner" id="qnsq_banner">
+			<img src="img/qnsq_banner.jpg"/>
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：黑白标题
+       -->
+		<div class="width_twelve text_center block_center hb_title" id="hb_title">
+			<img src="img/logo_hb.png"/>
+			<div>
+				<p>
+					梧陌独栋青年生活社区，让有共同爱好的人聚在一起
+				</p>
+			</div>
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：社区展示
+        -->
+		<div class="sqzs block_center " id="sqzs">
+			<div class="sqzs_fl left">
+				<!--<a v-bind:href="sqzs.href">
+				</a>-->
+					<img v-bind:src="sqzs.img_src" src="img/qnsq_sqlx_img1.jpg"/>
+				
+				<div class="sqzs_title">
+					<p>
+						足球青年社区
+					</p>
+				</div>
+			</div>
+			<div class="sqzs_fl left">
+				<!--<a v-bind:href="sqzs.href">
+				</a>-->
+					<img v-bind:src="sqzs.img_src" src="img/qnsq_sqlx_img2.jpg"/>
+				
+				<div class="sqzs_title">
+					<p>
+						音乐青年社区
+					</p>
+				</div>
+			</div>
+			<div class="sqzs_fl left">
+				<!--<a v-bind:href="sqzs.href">
+				</a>-->
+					<img v-bind:src="sqzs.img_src" src="img/qnsq_sqlx_img3.jpg"/>
+				
+				<div class="sqzs_title">
+					<p>
+						艺术青年社区
+					</p>
+				</div>
+			</div>			
+			<div class="clear">
+				
+			</div>
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：生活方式
+        -->
+		<div class="shfs width_big" id="shfs">
+			<div class="width_twelve block_center">
+				<div class="shfs_title text_center">
+					<h2>
+	        			最好的生活方式致敬你的青春
+	        		</h2>
+					<p>
+						一起生活、玩耍、成长，这里最不缺的是朋友
+					</p>
+				</div>
+				<div class="shfs_con text_center">
+					<div class="shfsc_fl">
+						<div class="shfsc_img">
+							<img src="img/qnsq_shfs_img1.jpg" />
+							<div class="shfs_hover_text">
+								<p>轻松、舒适、有品位 的生活环境</p>
+							</div>
+						</div>
+
+						<div class="shfsc_title">
+							<p>爱好</p>
+						</div>
+					</div>
+					
+					<div class="shfsc_fl">
+						<div class="shfsc_img">
+							<img src="img/qnsq_shfs_img2.jpg" />
+							<div class="shfs_hover_text">
+								<p>轻松、舒适、有品位 的生活环境</p>
+							</div>
+						</div>
+
+						<div class="shfsc_title">
+							<p>舒适</p>
+						</div>
+					</div>
+					
+					<div class="shfsc_fl">
+						<div class="shfsc_img">
+							<img src="img/qnsq_shfs_img3.jpg" />
+							<div class="shfs_hover_text">
+								<p>轻松、舒适、有品位 的生活环境</p>
+							</div>
+						</div>
+
+						<div class="shfsc_title">
+							<p>快乐</p>
+						</div>
+					</div>
+					
+					<div class="shfsc_fl">
+						<div class="shfsc_img">
+							<img src="img/qnsq_shfs_img4.jpg" />
+							<div class="shfs_hover_text">
+								<p>轻松、舒适、有品位 的生活环境</p>
+							</div>
+						</div>
+
+						<div class="shfsc_title">
+							<p>精彩</p>
+						</div>
+					</div>
+					
+					<div class="shfsc_fl">
+						<div class="shfsc_img">
+							<img src="img/qnsq_shfs_img5.jpg" />
+							<div class="shfs_hover_text">
+								<p>轻松、舒适、有品位 的生活环境</p>
+							</div>
+						</div>
+
+						<div class="shfsc_title">
+							<p>共享</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<!--
+           	作者：yuechunqiu@163.com
+           	时间：2017-09-13
+           	描述：社群活动
+       -->
+		<div class="width_twelve block_center sqhuodong" id="sqhuodong">
+			<div class="sqhd_title text_center">
+				<h2>社群活动</h2>
+				<p>新青年、新生活、新玩法</p>
+			</div>
+			<div class="width_twelve index_sqcon">
+				<div class="sq_left left">
+					<div class="sql_top sqggmk_box">
+						<img src="img/qnsq_sqhd_img1.jpg" />
+						
+						<a href="####"></a>
+						<div class="sqhd_bq sqhdo_bq">
+							<span>9月13日荧光夜跑活动，邀请你来参加！</span>
+						</div>
+						<div class="sqhd_djbm sqhdo_djbm">
+							<a href="####">点击报名</a>
+						</div>
+						
+					</div>
+					<div class="sql_bt">
+						<div class="sqlbt_left left sqggmk_box">
+							<img src="img/qnsq_sqhd_img2.jpg"/>
+							
+							<a href="####"></a>
+							<div class="sqhd_bq sqhdt_bq">
+								<span>【活动报道】狼人杀狂欢夜，狼人一次未胜！</span>
+							</div>
+						</div>
+						<div class="sqlbt_left right sqggmk_box">
+							<img src="img/qnsq_sqhd_img3.jpg"/>
+							
+							<a href="####"></a>
+							<div class="sqhd_bq sqhdt_bq sqhds_bq">
+								<span>【活动报道】跆拳道体验营，第一期圆满结束  </span>
+							</div>
+						</div>
+						<div class="clear">
+
+						</div>
+					</div>
+				</div>
+				<div class="sq_right right sqggmk_box">
+					<img src="img/qnsq_sqhd_img4.jpg" />
+					
+					<a href="####"></a>
+					<div class="sqhd_bq sqhdt_bq sqhdf_bq">
+						<span>2017极限印象记 户外摄影大赛，开始啦！</span>
+						
+					</div>
+					<div class="sqhd_djbm sqhdf_djbm">
+						<a href="####">点击报名</a>
+					</div>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+
+		</div>
+		
+		<!--
+      	作者：yuechunqiu@163.com
+      	时间：2017-09-07
+      	描述：页脚
+        -->
+		<div class="width_big footer" id="footer">
+			<iframe src="footer.html"></iframe>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>房屋托管</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<!--<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：通用页头
+       -->
+		
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a href="index.html"><img v-bind:src="logo_img_src" src="img/top_logo.png" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select>
+						<option>
+							上海
+						</option>
+						<option>
+							杭州
+						</option>
+						<option>
+							苏州
+						</option>
+						<option>
+							北京
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="woyaozufang.html">我要租房</a>
+						</li>
+						<li>
+							<a href="qingnianshequ.html">青年社区</a>
+						</li>
+						<li class="nav_active">
+							<a href="fangwutuoguan.html">房屋托管</a>
+						</li>
+						<li>
+							<a href="wuyehezuo.html">物业合作</a>
+						</li>
+						<li>
+							<a href="jingcaishenghuo.html">精彩生活</a>
+						</li>
+						<li>
+							<a href="guanyuwumo.html">关于梧陌</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<a href="####">
+						个人中心
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg" />
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+		
+		
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：青年社区banner
+       -->
+		<div class="width_big qnsq_banner" id="fwtg_banner">
+			<img src="img/fwtg_banner.jpg" />
+		</div>
+		
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：加入梧陌
+       -->
+		<div class="width_twelve block_center text_center jrwm" id="jrwm">
+			<h2>
+				有房出租找梧陌，还拿出租的钱，不操房东的心
+			</h2>
+			<p>
+				你是一个忙碌的房东吗？水电坏了烦心，房子空租了闹心，怎样才能省心？
+			</p>
+			<h3>
+				400-810-5555
+			</h3>
+			<br />
+			<a href="#jrwm_bt">加入我们</a>
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：为什么选择梧陌
+       -->      
+		<div class="width_twelve block_center wsmxzwm" id="wsmxzwm">
+			<div class="fwtg_title">
+				<h2>为什么选择梧陌</h2>
+			</div>
+			<div class="tsfw_con  text_center">
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/fwtg_wsm_icon1.png"/>
+					<h2>资金雄厚</h2>
+					<p>
+						风投背景，资金无忧
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/fwtg_wsm_icon2.png"/>
+					<h2>社群文化</h2>
+					<p>
+						优质的青年社群文化及资源
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/fwtg_wsm_icon3.png"/>
+					<h2>专业管理</h2>
+					<p>
+						专业的运营管理团队
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/fwtg_wsm_icon4.png"/>
+					<h2>大数据</h2>
+					<p>
+						多终端的数据驱动
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/fwtg_wsm_icon5.png"/>
+					<h2>智能化</h2>
+					<p>
+						完善的智能化终端系统
+					</p>
+				</div>			
+			</div>		
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：三道保障措施
+       -->
+		<div class="width_twelve block_center wsmxzwm" id="bzcs">
+			<div class="fwtg_title">
+				<h2>三大保障措施</h2>
+			</div>
+			<div class="bzcs">
+				<div class="bzcs_con left" >
+					<div class="bzcs_con_box">
+						<h2>一站托管</h2>
+						<ul class="bzcs_list">
+							<li>1).房租月月到账，收益稳定。</li>
+							<li>2).3年起灵活租期,三年后租金递增。</li>
+							<li>3).为您的房子购买30W家财险。</li>
+							<li>4).公寓式管理，高效运营。</li>
+							<li>5).定期深度保洁、定期家电保养、维护。</li>
+						</ul>
+					</div>						
+				</div>	
+				<div class="bzcs_con left" >
+					<div class="bzcs_con_box">
+						<h2>三项支持</h2>
+						<ul class="bzcs_list">
+							<li>1).高标准统一装修，严格把关每一步装修环节。</li>
+							<li>2).专属管家，细心呵护您的房子，打理一切事务。</li>
+							<li>3).自有维修团队，及时处理报修故障。</li>
+						</ul>
+					</div>						
+				</div>	
+				<div class="bzcs_con left" >
+					<div class="bzcs_con_box">
+						<h2>房客认证</h2>
+						<ul class="bzcs_list">
+							<li>1).高素质租客，要求20-35白领入住。</li>
+							<li>2).一间一人，大房间最多住两个人。</li>
+							<li>3).不接受养宠物、有小孩和老人的租客。</li>
+							<li>4).不租给单位作为员工宿舍。</li>
+						</ul>
+					</div>						
+				</div>
+				<div class="clear">
+					
+				</div>				
+			</div>
+			
+		</div>
+
+		
+         <!--
+         	作者：yuechunqiu@163.com
+         	时间：2017-09-13
+         	描述：托管流程
+         -->
+        
+         <div class="width_big tglc" id="tglc">
+         	<div class="width_twelve block_center tglc_box">
+         		<div class="fwtg_title">
+					<h2>托管流程</h2>
+				</div>
+				<div class="tglc_img text_center">
+					<img src="img/fwtg_lcimg.png"/>
+				</div>
+				
+         	</div>         	
+         </div>
+
+         <!--
+         	作者：yuechunqiu@163.com
+         	时间：2017-09-13
+         	描述：加入我们
+         -->
+		<div class="width_twelve block_center text_center jrwm jrwm_bt" id="jrwm_bt">
+			<input type="text" placeholder="您的姓名" /><br /><br /><br />
+			<input type="text" placeholder="您的电话" /><br /><br /><br />
+			<input type="text" placeholder="房屋所在地" /><br /><br /><br />
+			<a href="####">加入我们</a>
+		</div>
+		
+		<!--
+      	作者：yuechunqiu@163.com
+      	时间：2017-09-07
+      	描述：页脚
+      -->
+		<div class="width_big footer" id="footer">
+			<iframe src="footer.html"></iframe>
+		</div>
+		
+		
+		
+	</body>
+
+</html>

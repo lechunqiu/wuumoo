@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>物业合作</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：通用页头
+       -->
+
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a href="index.html"><img v-bind:src="logo_img_src" src="img/top_logo.png" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select>
+						<option>
+							上海
+						</option>
+						<option>
+							杭州
+						</option>
+						<option>
+							苏州
+						</option>
+						<option>
+							北京
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="woyaozufang.html">我要租房</a>
+						</li>
+						<li>
+							<a href="qingnianshequ.html">青年社区</a>
+						</li>
+						<li>
+							<a href="fangwutuoguan.html">房屋托管</a>
+						</li>
+						<li class="nav_active">
+							<a href="wuyehezuo.html">物业合作</a>
+						</li>
+						<li>
+							<a href="jingcaishenghuo.html">精彩生活</a>
+						</li>
+						<li>
+							<a href="guanyuwumo.html">关于梧陌</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<a href="####">
+						个人中心
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg" />
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：物业合作banner
+       -->
+		<div class="width_big qnsq_banner" id="wyhz_banner">
+			<img v-bind:src="banner_src" />
+		</div>
+		<script type="text/javascript">
+			var wyhzbanner = new Vue({
+				el: '#wyhz_banner',
+				data: {
+					banner_src: 'img/wyhz_banner.jpg'
+				}
+			})
+		</script>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：五大理由
+       -->
+		<div class="width_twelve block_center wsmxzwm wdly" id="wyhz_wdly">
+			<div class="fwtg_title text_center" >
+				<h2>选择梧陌的五大理由</h2>
+			</div>
+			<div class="tsfw_con  text_center">
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/wyhz_wdly_icon1.png" />
+					<h2>品牌影响力</h2>
+					<p>
+						独有的青年人群品牌影响力
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/wyhz_wdly_icon2.png" />
+					<h2>政府支持</h2>
+					<p>
+						政府新政，鼓励发展
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/wyhz_wdly_icon3.png" />
+					<h2>省时省心</h2>
+					<p>
+						轻松房东，快乐生活
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/wyhz_wdly_icon4.png" />
+					<h2>收益无忧</h2>
+					<p>
+						经营稳定，持续收益
+					</p>
+				</div>
+				<div class="tsfwc_tw diplay_inline_block wsmxz_tw">
+					<img src="img/wyhz_wdly_icon5.png" />
+					<h2>租约灵活</h2>
+					<p>
+						年租月租，想收就收
+					</p>
+				</div>
+			</div>			
+			<div class="text_center txhzyy_box">
+				<a href="#hzyxtx" class="txhzyy"><span></span>填写合作意向<span></span></a>
+			</div>
+		</div>
+		
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：梧陌可以做到
+       -->
+        <div class="width_big wmkyzd" id="wmkyzd">
+        	<div class="width_twelve block_center wmkyzd_box">
+        		<div class="kyzd_con">
+        			<div class="kyzd_con_box">
+        				<h2>梧陌可以做到</h2>
+        				<ul class="kyzdlist">
+        					<li><p>导入梧陌品牌经营理念</p></li>
+        					<li><p>激活沉默客户群体</p></li>
+        					<li><p>导入优质青年群体资源</p></li>
+        					<li><p>盘活存量资产</p></li>
+        					<li><p>充分挖掘物业潜在升值空间</p></li>
+        					<li><p>大幅提升空间价值</p></li>
+        					<li><p>提升物业周边社群粘度</p></li>
+        				</ul>
+        				<!--<div class="txyy_bt_box text_center">
+        					<a v-bind:href="txhzyy_href" class="txhzyy"><span></span>{{txhzyy_btn}}<span></span></a>
+        				</div>-->
+        			</div>
+        		</div>
+        		<div class="kyzd_img">
+        			<img src="img/wyhz_kezd_img.png"/>
+        		</div>
+        	</div>       	
+        </div>
+
+        <!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：物业筛选提示
+        -->
+        <div class="width_twelve block_center wysx" id="wysx">
+        	<div class="wysx_box">
+        		<div class="fwtg_title " >
+					<h2>这样的物业请与我们合作</h2>
+				</div>
+				<div class="wysx_con">
+					<ul class="wysx_list">
+						<li><p>在北京、广州、上海、深圳、郑州、合肥、南京等一线、及省会级城市</p></li>
+						<li><p>独栋面积在4000㎡以上，可以签10年以上的长期合同</p></li>
+						<li><p>物业产权手续完备，可合法商用，能申报酒店类消防</p></li>
+						<li><p>项目周边交通方便，有较为完备的商业配套，最好靠近地铁站</p></li>
+						<li><p>市政配套完善，用水、用电、排水、排污就绪</p></li>
+					</ul>
+				</div>
+				<div class="wysx_btn_box">
+					<a href="#hzyxtx" class="txhzyy"><span></span>填写合作意向<span></span></a>
+				</div>
+        	</div> 	
+        </div>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：合作意向填写
+       -->
+		<div class="width_big hzyxtx" id="hzyxtx">
+			<div class="width_twelve block_center hzyxtx_box">
+				<div class="yxtxform_box">
+					<h2>
+						合作意向填写
+					</h2>
+					<form action="">
+						<label for="">物业地址：</label>
+						<input type="text" /><br /><br />
+						<label for="">您的姓名：</label>
+						<input type="text" /><br /><br />
+						<label for="">您的手机：</label>
+						<input type="text" /><br /><br />
+						<label for="wyms">物业描述：</label>
+						<textarea name="" rows="" cols=""></textarea><br /><br />
+						<input class="hzyytj" type="submit" value="提交" />
+					</form>
+				</div>
+			</div>	
+		</div>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-13
+        	描述：合作流程
+       -->
+		 <div class="width_big tglc hzlc" id="hzlc">
+         	<div class="width_twelve block_center tglc_box">
+         		<div class="fwtg_title">
+					<h2>合作流程</h2>
+				</div>
+				<div class="tglc_img text_center">
+					<img src="img/wyhz_hzlc.png"/>
+				</div>
+				
+         	</div>         	
+        </div>
+		<!--
+      	作者：yuechunqiu@163.com
+      	时间：2017-09-07
+      	描述：页脚
+      -->
+		<div class="width_big footer" id="footer">
+			<iframe src="footer.html"></iframe>
+		</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我要租房-详情</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<!--<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：通用页头
+        -->
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a href="index.html"><img v-bind:src="logo_img_src" src="img/top_logo.png" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select>
+						<option>
+							上海
+						</option>
+						<option>
+							杭州
+						</option>
+						<option>
+							苏州
+						</option>
+						<option>
+							北京
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li class="nav_active">
+							<a href="woyaozufang.html">我要租房</a>
+						</li>
+						<li>
+							<a href="qingnianshequ.html">青年社区</a>
+						</li>
+						<li>
+							<a href="fangwutuoguan.html">房屋托管</a>
+						</li>
+						<li>
+							<a href="wuyehezuo.html">物业合作</a>
+						</li>
+						<li>
+							<a href="jingcaishenghuo.html">精彩生活</a>
+						</li>
+						<li>
+							<a href="guanyuwumo.html">关于梧陌</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<a href="####">
+						个人中心
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg" />
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-11
+        	描述：租房详情banner
+       -->
+		<style>
+
+		</style>
+		<div class="width_big zfxqbanner" id="zfxq_banner">
+			<div class="width_twelve block_center zfxqbn_box">
+				<div class="zfxqbn_left left">
+					<div class="zfxqbnl_top">
+						<img  src="img/wyzfxq_img1.jpg" />
+						<img  src="img/wyzfxq_img_s_2.jpg" />
+						<img  src="img/wyzfxq_img_s_3.jpg" />
+						<img  src="img/wyzfxq_img_s_4.jpg" />
+						<img  src="img/wyzfxq_img_s_5.jpg" />
+
+					</div>
+					<div class="zfxqbnl_bottom">
+						<ul>
+							<li  class="zfxqbnll_ed">
+								<a href="####">
+									<img src="img/wyzfxq_img_s_1.jpg"  />
+								</a>
+							</li>
+							<li>
+								<a href="####">
+									<img src="img/wyzfxq_img_s_2.jpg"  />
+								</a>
+							</li>
+							<li>
+								<a href="####">
+									<img src="img/wyzfxq_img_s_3.jpg"  />
+								</a>
+							</li>
+							<li>
+								<a href="####">
+									<img src="img/wyzfxq_img_s_4.jpg"  />
+								</a>
+							</li>
+							<li>
+								<a href="####">
+									<img src="img/wyzfxq_img_s_5.jpg"  />
+								</a>
+							</li>
+							<li>
+								<a href="####">
+									<img src="img/wyzfxq_img_s_1.jpg"  />
+								</a>
+							</li>
+						</ul>
+						<span class="zfxqbnl_left_icon">
+        					<img src="img/wyzfxq_left_icon.png"/>
+        				</span>
+						<span class="zfxqbnl_right_icon">
+        					<img src="img/wyzfxq_right_icon.png"/>
+        				</span>
+					</div>
+				</div>
+				<div class="zfxqbn_right right">
+					<div class="zfxqbn_box">
+						<h2>【宝山区】宝欣苑一村4居室朝北 A室</h2>
+						<div class="wyzfdg">
+							<p >1200<span>元/月</span></p>
+							<p >朝北</p>
+							<p >12㎡</p>
+						</div>
+						<ul class="zfxx_list">
+							<li>
+								地铁5分钟
+							</li>
+							<li>
+								独立卫生间
+							</li>
+							<li>
+								押一付一
+							</li>
+							<li>
+								朝南
+							</li>
+						</ul>
+						<div class="fwcs_xq">
+							<ul class="fwcs_list">
+								<li >
+									<p>编号<span>A0005433A</span></p>
+								</li>
+								<li >
+									<p>类型：<span>合租</span></p>
+								</li>
+								<li >
+									<p>户型：<span>3室1厅</span></p>
+								</li>
+								<li >
+									<p>面积：<span>12㎡</span></p>
+								</li>
+								<li >
+									<p>楼层：<span>8/13层</span></p>
+								</li>
+								<li >
+									<p>社区：<span>宝欣苑</span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="clear">
+
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-11
+        	描述：租房信息详情
+        -->
+		<div class="big_width zfxqcon_bq" id="zfxqcon_bq">
+			<div class="width_twelve block_center">
+				<ul class="zfxqc_list zfxqxxyl">
+					<li class="zfxqcl_ed">
+						<a href="#jbxx">基本信息</a>
+					</li>
+					<li>
+						<a href="#fjsy">房间室友</a>
+					</li>
+					<li>
+						<a href="#ggkj">公共空间</a>
+					</li>
+					<li>
+						<a href="#jtzb">交通周边</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-11
+        	描述：租房信息内容
+   -->
+		<div class="width_twelve block_center" id="zfxx">
+			<div class="zfxx_left left">
+				<div class="fwxqgbf" id="jbxx">
+					<div class="xqbf_tilte">
+						<span>关于此房</span>
+					</div>
+					<div class="gycf_con">
+						<p>寓见公寓，沪上首选的品牌公寓，专为年轻人打造的梦想家。</p>
+						<p>宜家风装修，拎包入住！全天候热水，品质卫浴！五星级床垫，安稳好眠！WIFI全覆盖，免费畅连！</p>
+						<p>更有经过认证的靠谱室友，与你一起“寓见”全新生活。</p>
+					</div>
+
+				</div>
+				
+				<div class="fwxqgbf">
+					<div class="xqbf_tilte">
+						<span>配套设施</span>
+					</div>
+					<div class="ptss_con">
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon1.jpg" />
+							<p>床</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon2.jpg" />
+							<p>衣柜</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon3.jpg" />
+							<p>床头柜</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon4.jpg" />
+							<p>书桌</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon5.jpg" />
+							<p>冰箱</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon6.jpg" />
+							<p>洗衣机</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon7.jpg" />
+							<p>空调</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon8.jpg" />
+							<p>热水器</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon9.jpg" />
+							<p>微波炉</p>
+						</div>
+						<div class="ptsstw" >
+							<img src="img/wyzfxq_ptss_icon10.jpg" />
+							<p>WIFI</p>
+						</div>
+						<div class="clear">
+
+						</div>
+					</div>
+
+				</div>
+				
+				
+				<hr /><br /><br />
+				<div class="fwxqgbf">
+					<div class="xqbf_tilte">
+						<span>房间：</span>
+					</div>
+					<div class="fangjian_con">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr class="fjtable_th">
+								<th>房间</th>
+								<th>租金</th>
+								<th>状态</th>
+								<th>室友</th>
+								<th>朝向</th>
+								<th>窗户</th>
+								<th>阳台</th>
+								<th>独卫</th>
+							</tr>
+							<tr class="fjtable_con">
+								<td>A</td>
+								<td>1238/月</td>
+								<td>已租</td>
+								<td><img src="img/wyzfxq_sex_1.png"/></td>
+								<td>南</td>
+								<td><img src="img/wyzfxq_dh_icon.png"/></td>
+								<td><img src="" /></td>
+								<td><img src=""/></td>
+							</tr>
+							<tr class="fjtable_con">
+								<td>B</td>
+								<td>1238/月</td>
+								<td>已租</td>
+								<td><img src="img/wyzfxq_sex_1.png"/></td>
+								<td>南</td>
+								<td><img src="img/wyzfxq_dh_icon.png"/></td>
+								<td><img src="" /></td>
+								<td><img src=""/></td>
+							</tr>
+							<tr class="fjtable_con">
+								<td>C</td>
+								<td>1238/月</td>
+								<td>已租</td>
+								<td><img src="img/wyzfxq_sex_1.png"/></td>
+								<td>南</td>
+								<td><img src="img/wyzfxq_dh_icon.png"/></td>
+								<td><img src="" /></td>
+								<td><img src=""/></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<hr /><br /><br />
+				<div class="fwxqgbf" id="fjsy">
+					<div class="xqbf_tilte">
+						<span>室友</span>
+					</div>
+					<div class="shiyou_con">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr class="sytable_th">
+								<th>室友</th>
+								<th>职业</th>
+								<th>星座</th>
+								<th>爱好</th>
+							</tr>
+							<tr class="sytable_con">
+								<td>室友A1</td>
+								<td>设计师</td>
+								<td>射手座</td>
+								<td>
+									<img src="img/wyzfxq_ah_cion1.png"/>
+									<img src="img/wyzfxq_ah_cion2.png"/>
+									<img src="img/wyzfxq_ah_cion3.png"/>
+									<img src="img/wyzfxq_ah_cion4.png"/>
+									<img src="img/wyzfxq_ah_cion5.png"/>
+								</td>
+							</tr>
+							<tr class="sytable_con">
+								<td>室友A2</td>
+								<td>策划</td>
+								<td>摩羯座</td>
+								<td>
+									<img src=""/>
+									<img src=""/>
+									<img src="img/wyzfxq_ah_cion3.png"/>
+									<img src="img/wyzfxq_ah_cion4.png"/>
+									<img src="img/wyzfxq_ah_cion5.png"/>
+								</td>
+							</tr>
+							
+							<tr class="sytable_con">
+								<td>室友B</td>
+								<td>程序员</td>
+								<td>处女座</td>
+								<td>
+									<img src="img/wyzfxq_ah_cion1.png"/>
+									<img src=""/>
+									<img src="img/wyzfxq_ah_cion3.png"/>
+									<img src="img/wyzfxq_ah_cion4.png"/>
+									<img src="img/wyzfxq_ah_cion5.png"/>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+
+				<hr /><br /><br />
+				<div class="fwxqgbf" id="ggkj">
+					<div class="xqbf_tilte">
+						<span>公共空间</span>
+					</div>
+					<div class="ggkj_con">
+						
+						<div class="ggkj_img" >
+							<img src="img/wyzfxq_ggkj1.jpg" />
+							<span>
+        						公用客厅
+        					</span>
+						</div>
+						
+						<div class="ggkj_img" >
+							<img src="img/wyzfxq_ggkj2.jpg" />
+							<span>
+        						小区外景
+        					</span>
+						</div>
+
+					</div>
+				</div>
+
+				<hr /><br /><br />
+			</div>
+			<div class="zfxx_right right">
+				<div class="fwxqgbf">
+					<div class="xqbf_tilte diplay_inline_block">
+						<span></span>
+					</div>
+					<div class="kefu_con diplay_inline_block right ">
+						<div class="rexian ">
+							<a v-bind:href="kfrx_href" href="####">400-810-5555</a>
+						</div>
+						<div class="zxyy">
+							<a href="####">资讯客服</a>
+							<a href="####">预约客服</a>
+						</div>
+					</div>
+					<div class="clear">
+
+					</div>
+				</div>
+				
+				<div class="fwxqgbf">
+					<div class="xqbf_tilte zsgj_title">
+						<span> 专属管家</span>
+					</div>
+					<div class="kefu_con diplay_inline_block right  zsgj_con">
+						<div class="zsgj_tx text_center">
+							<img src="img/wyzfxq_tx.jpg"/>
+							<h2>莫小北</h2>
+						</div>
+						<div class="zsgj_ywxx text_center">
+							<p>房源数量：<span>7间</span></p>
+							<p>服务青客：<span>36人</span></p>
+							<p>近三十天出房：<span>8间</span></p>
+						</div>
+						<div class="fwzz text_center">
+							<h2>服务宗旨</h2>
+							<p>
+								由衷的邀请您入住我们的公寓， 我们将用最大的热情为您服务。在外打拼不易，这里就是您的家！
+							</p>
+						</div>
+					</div>
+					<div class="clear">
+
+					</div>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="jtzb" id="jtzb">
+				<div class="fwxqgbf ">
+					<div class="xqbf_tilte">
+						<span>交通周边</span>
+					</div>
+					<div class="jtzb_con">
+						<table class="jtzb_tab" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									<p>附近地铁站</p>
+								</td>
+								<td>
+									<p>四河、华府大道</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>公交路线</p>
+								</td>
+								<td>
+									<p>伏龙小区：503a路、 503路、 505路、 523路</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>餐饮</p>
+								</td>
+								<td>
+									<p>串根香麻辣涮(总店)、小龙坎老火锅(华阳店)、西蜀人家、全家福芋儿鸡(向阳街店)、火锅摆在川西坝子（华阳店）、西蜀人家、全家福芋儿鸡(向阳街店)、火锅摆在川西坝子（华阳店）</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>购物</p>
+								</td>
+								<td>
+									<p>缤纷广场、新华文轩华阳店、龙华建材批发中心、红旗超市(华阳左岸花都分场)、长江家私城阳店、龙华建材批发中心、红旗超市(华阳左岸花都分场)、长江家私城）</p>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：地图
+       -->
+		<div class="width_big wyzfxq_dt" id="wyzfxq_dt">
+
+			<iframe src="wyzfxq_ditu.html"></iframe>
+
+			<div class="dtfl">
+				<ul class="dtfl_list">
+					<li class="dtfllist_ed">
+						<a href="####">交通</a>
+					</li>
+					<li>
+						<a href="####">教育</a>
+					</li>
+					<li>
+						<a href="####">医疗</a>
+					</li>
+					<li>
+						<a href="####">购物</a>
+					</li>
+					<li>
+						<a href="####">生活</a>
+					</li>
+					<li>
+						<a href="####">娱乐</a>
+					</li>
+				</ul>
+				<div class="dtfl_con" >
+					<span>1</span>
+					<p>海波路黄家花园路海波路黄家花园路海波路黄家花园路(公交站)</p>
+					<u>49米</u>
+				</div>
+				<div class="dtfl_con" >
+					<span>2</span>
+					<p>海波路黄家花园路海</p>
+					<u>49米</u>
+				</div>
+				<div class="dtfl_con" >
+					<span>3</span>
+					<p>海波路黄家花园路海</p>
+					<u>49米</u>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-12
+        	描述：梧陌特色服务
+       -->
+		<div class="width_twelve block_center wmtsfw" id="wmtsfw">
+			<div class="fwxqgbf ">
+				<div class="xqbf_tilte">
+					<span>梧陌特色服务</span>
+				</div>
+				<div class="tsfw_con  text_center">
+					<div class="tsfwc_tw diplay_inline_block">
+						<img src="img/wyzfxq_tsff_1.png" />
+						<h2>wifi全覆盖</h2>
+						<p>
+							独特的会员登录方式，安全私密信号强，网速快，随心用
+						</p>
+					</div>
+					<div class="tsfwc_tw diplay_inline_block">
+						<img src="img/wyzfxq_tsff_2.png" />
+						<h2>免费保洁</h2>
+						<p>
+							免费公共区域月度保洁好环境，才有好生活
+						</p>
+					</div>
+					
+					<div class="tsfwc_tw diplay_inline_block">
+						<img src="img/wyzfxq_tsff_3.png" />
+						<h2>上门维修</h2>
+						<p>
+							7*12小时维修随时待命上门维修服务，舒心入住无担忧
+						</p>
+					</div>
+					
+					<div class="tsfwc_tw diplay_inline_block">
+						<img src="img/wyzfxq_tsff_4.png" />
+						<h2>专属管家</h2>
+						<p>
+							7*12小时服务专职管家，生活琐事轻松应对
+						</p>
+					</div>
+					
+					<div class="tsfwc_tw diplay_inline_block">
+						<img src="img/wyzfxq_tsff_5.png" />
+						<h2>免费换租</h2>
+						<p>
+							全城万间房源免费更换想住哪里住哪里
+						</p>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：优质房源推荐
+      -->
+		<div class=" block_center yzfytj_box" id="yzfytj_box">
+			<iframe src="youzhifytj.html"></iframe>
+		</div>
+
+
+		<!--
+      	作者：yuechunqiu@163.com
+      	时间：2017-09-07
+      	描述：页脚
+      -->
+		<div class="width_big footer" id="footer">
+			<iframe v-bind:src="footer_src" src="footer.html"></iframe>
+		</div>
+		
+
+	</body>
+
+</html>

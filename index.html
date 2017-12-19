@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>梧陌公寓</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<!--<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：通用页头
+       -->
+
+		<!--<div class="tyheader width_big" id="tyheader">
+			<iframe v-bind:src="tyiframe_src">
+			</iframe>
+		</div>
+		<script>
+			var tyheader=new Vue({
+				el:'#tyheader',
+				data:{
+					tyiframe_src:'header.html?navNo=0'
+				}
+			})
+		</script>-->
+		
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a href="index.html"><img v-bind:src="logo_img_src" src="img/top_logo.png" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select>
+						<option>
+							上海
+						</option>
+						<option>
+							杭州
+						</option>
+						<option>
+							苏州
+						</option>
+						<option>
+							北京
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li class="nav_active">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="woyaozufang.html">我要租房</a>
+						</li>
+						<li>
+							<a href="qingnianshequ.html">青年社区</a>
+						</li>
+						<li>
+							<a href="fangwutuoguan.html">房屋托管</a>
+						</li>
+						<li>
+							<a href="wuyehezuo.html">物业合作</a>
+						</li>
+						<li>
+							<a href="jingcaishenghuo.html">精彩生活</a>
+						</li>
+						<li>
+							<a href="guanyuwumo.html">关于梧陌</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<a href="####">
+						个人中心
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg" />
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-08-24
+        	描述：banner
+        -->
+		<div class="big_width banner" id="index_banner">
+			<div class="banner_img">
+				<ul>
+					<li >
+						<a href="####">
+							<img src="img/banner1.jpg" />
+						</a>
+						<p></p>
+					</li>
+					<li >
+						<a href="####">
+							<img src="img/banner2.jpg" />
+						</a>
+						<p></p>
+					</li>
+					<li >
+						<a href="####">
+							<img src="img/banner3.jpg" />
+						</a>
+						<p></p>
+					</li>
+				</ul>
+			</div>
+			<div class="prev prev_left">
+				<img src="img/prev_left.png"/>
+			</div>
+			<div class="prev prev_right">
+				<img src="img/prev_right.png" />
+			</div>
+
+			<div class="banner_search">
+				<div class="bnsh">
+					<div class="banner_search_fl">
+						<div class="zuffl text_center">
+							<span>合租</span>
+							<ul>
+								<li >合租</li>
+								<li >整租</li>
+								<li >直租</li>
+							</ul>
+						</div>
+					</div>
+					<div class="banner_search_input">
+						<form action="" method="post">
+							<input type="text" placeholder="想去哪里住"/>
+
+							<input type="submit" value="   搜索" />
+							<div class="search_icon right">
+								<img src="img/search_icon.png"/>
+							</div>
+							<div class="search_dz diplay_inline_block right">
+								<img src="img/search_dizhi.png" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-08-24
+        	描述：
+        -->
+		<div class="width_twelve " id="index_biaoyu">
+			<div class="biaoyu_box block_center">
+				<ul>
+					<li class="text_center left">
+						<img src="img/by_icon_1.png" />
+						<h2>高·品质</h2>
+						<p>精装修  拎包即住</p>
+					</li>
+					<li class="text_center left">
+						<img src="img/by_icon_2.png" />
+						<h2>低·价格</h2>
+						<p>仅房租 无任何其他费用</p>
+					</li>
+					<li class="text_center left">
+						<img src="img/by_icon_3.png" />
+						<h2>优·生活</h2>
+						<p>丰富活动 边住边交友</p>
+					</li>
+					<li class="text_center left">
+						<img src="img/by_icon_4.png" />
+						<h2>好·服务</h2>
+						<p>高速wifi定时保洁</p>
+					</li>
+					<li class="text_center left">
+						<img src="img/by_icon_5.png" />
+						<h2>真·房源</h2>
+						<p>实地验收 真实房源</p>
+					</li>
+				</ul>
+				<div class="clear">
+					
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：梧陌合租 
+        -->
+		<div class="width_big index_hezu" id="index_hezu">
+			<div class="width_twelve text_center index_mk_title">
+				<div class="diplay_inline_block idtit_img">
+					<img src="img/index_title_1.png" />
+				</div>
+				<div class="diplay_inline_block idtit_title">
+					<h2>梧陌合租</h2>
+					<p>
+						最优的价格
+					</p>
+				</div>
+			</div>
+			<div class="index_zs">
+				<div class="index_zs_link diplay_inline_block">
+					<ul class="hz_list">
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_1.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img v-bind:src="zsli.zsdzicon_src" src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_2.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img v-bind:src="zsli.zsdzicon_src" src="img/dizhi_icon.png"/> 宝山区-祁华路125号
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_3.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img v-bind:src="zsli.zsdzicon_src" src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_4.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img v-bind:src="zsli.zsdzicon_src" src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_5.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img v-bind:src="zsli.zsdzicon_src" src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+					</ul>
+					<div class="clear">
+					</div>
+				</div>
+				<div class="zsl_left_icon wmhz_left_icon">
+					<img src="img/left_icon.png" />
+				</div>
+				<div class="zsl_right_icon wmhz_right_icon">
+					<img src="img/right_icon.png" />
+				</div>
+			</div>
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：梧陌整租
+        -->
+		<div class="width_big index_hezu index_zhengzu" id="index_zhengzu">
+			<div class="width_twelve text_center index_mk_title">
+				<div class="diplay_inline_block idtit_img">
+					<img v-bind:src="title_icon_src" />
+				</div>
+				<div class="diplay_inline_block idtit_title">
+					<h2>梧陌整租</h2>
+					<p>
+						成套出租高品质公寓
+					</p>
+				</div>
+			</div>
+			<div class="index_zs">
+				<div class="index_zs_link diplay_inline_block">
+
+					<ul class="zz_list">
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_5.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>温馨一居</h3>
+								<p>
+									<img src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥3500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_6.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>温馨一居</h3>
+								<p>
+									<img src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥3500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_7.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>温馨一居</h3>
+								<p>
+									<img src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥3500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_8.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>温馨一居</h3>
+								<p>
+									<img src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥3500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li >
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_5.jpg"/>
+								<a href="####"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>温馨一居</h3>
+								<p>
+									<img src="img/dizhi_icon.png"/> 宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥3500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+					</ul>
+					<div class="clear">
+					</div>
+				</div>
+				<div class="zsl_left_icon zzzsl_left_icon">
+					<img src="img/left_icon.png"/>
+				</div>
+				<div class="zsl_right_icon zzzsl_right_icon">
+					<img src="img/right_icon.png"/>
+				</div>
+			</div>
+		</div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：梧陌青年社区
+        -->
+
+		<div class="width_big index_hezu" id="index_shequ">
+			<div class="width_twelve text_center index_mk_title">
+				<div class="diplay_inline_block idtit_img">
+					<img src="img/index_title_3.png"/>
+				</div>
+				<div class="diplay_inline_block idtit_title">
+					<h2>梧陌青年社区</h2>
+					<p>
+						同一个梦想 同一片天地
+					</p>
+				</div>
+			</div>
+			<div class="width_twelve index_sqcon">
+				<div class="sq_left left">
+					<div class="sql_top sqggmk_box">
+						<img src="img/shequ_img_1.jpg"/>
+						<div class="sqt_biaoqian">
+							<span>梧陌足球社区</span>
+						</div>
+						<div class="sqb_title">
+							<p>住在这里有球看，还有球踢！--足球爱好者的崭新天地</p>
+							<span>																
+								宝山区-祁华路125号保利叶之林
+							</span>
+						</div>
+						<a href="####"></a>
+					</div>
+					<div class="sql_bt">
+						<div class="sqlbt_left left sqggmk_box">
+							<img src="img/shequ_img_2.jpg"/>
+							<div class="sqt_biaoqian">
+								<span>梧陌营销人才社区</span>
+							</div>
+							<div class="sqb_title">
+								<p>搞营销策划的都在这里！</p>
+								<span>																	
+									祁华路125号
+								</span>
+							</div>
+							<a href="####"></a>
+						</div>
+						<div class="sqlbt_left right sqggmk_box">
+							<img src="img/shequ_img_3.jpg" />
+							<a href="####"></a>
+						</div>
+						<div class="clear">
+
+						</div>
+					</div>
+				</div>
+				<div class="sq_right right sqggmk_box">
+					<img src="img/shequ_img_4.jpg" />
+					<div class="sqt_biaoqian">
+						<span>梧陌互联网社区</span>
+					</div>
+					<div class="sqb_title sqrr_title">
+						<p>IT牛人都在这里！--互联网人的生活社区</p>
+						<span>															
+							普陀区-大渡河路1895号
+						</span>
+					</div>
+					<a href="####"></a>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+
+		</div>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：优质房源推荐
+      -->
+		<div class=" block_center yzfytj_box" id="yzfytj_box">
+			<iframe src="youzhifytj.html"></iframe>
+		</div>
+
+
+		<!--
+      	作者：yuechunqiu@163.com
+      	时间：2017-09-07
+      	描述：页脚
+      -->
+		<div class="width_big footer" id="footer">
+			<iframe src="footer.html"></iframe>
+		</div>
+
+
+	</body>
+
+</html>

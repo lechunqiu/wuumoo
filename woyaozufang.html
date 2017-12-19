@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我要租房</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<!--<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：通用页头
+        -->		
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a href="index.html"><img v-bind:src="logo_img_src" src="img/top_logo.png" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select>
+						<option>
+							上海
+						</option>
+						<option>
+							杭州
+						</option>
+						<option>
+							苏州
+						</option>
+						<option>
+							北京
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li class="nav_active">
+							<a href="woyaozufang.html">我要租房</a>
+						</li>
+						<li>
+							<a href="qingnianshequ.html">青年社区</a>
+						</li>
+						<li>
+							<a href="fangwutuoguan.html">房屋托管</a>
+						</li>
+						<li>
+							<a href="wuyehezuo.html">物业合作</a>
+						</li>
+						<li>
+							<a href="jingcaishenghuo.html">精彩生活</a>
+						</li>
+						<li>
+							<a href="guanyuwumo.html">关于梧陌</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<a href="####">
+						个人中心
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg" />
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+		
+		
+		
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-08
+        	描述：我要租房banner部分
+       -->
+        <div class="width_big wyzf_banner" id="wyzf_banner">
+        	<div class="width_twelve wyzf_cz_box">
+        		<div class="zftj tjzf">
+        			<a href="####">条件找房</a>
+        		</div>
+        		<div class="zftj dtzf">
+        			<a href="wyzf_dtzf.html">地图找房</a>
+        		</div>
+        		
+        		<div class="wyzf_tjzf_con">
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：条件找房搜索
+                    -->
+        			<div class="wyzf_tjzf_search">
+        				<div class="tjzfs_box wyzfsearch_ipt">
+        					<input type="text" placeholder="请输入区域、商圈或小区名"/>
+        					<input type="submit" value="搜索"/>
+        				</div>
+        				<div class="tjzfs_box tjzfs_smss">
+        					<p>
+        						热门搜索
+        					</p>
+        					<a href="####">宜山路</a>
+        					<a href="####">外滩</a>
+        					<a href="####">火车南站</a>
+        					<a href="####">九里堤</a>
+        					<a href="####">内光华</a>
+        					<a href="####">红牌楼</a>
+        					<a href="####">静居寺</a>
+        					<a href="####">五角场</a>
+        				</div>
+        			</div>
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：房间价格筛选
+                    -->
+        			<div class="tjzfsx">
+        				<span>房间价格</span>
+        				<div class="fjjg_xqfl">
+        					<div class="fenleiqh">
+        						<a href="####" class="tjsx_a_ed" >全部</a>
+	        					<a href="####">500-700</a>
+	        					<a href="####">700-1000</a>
+	        					<a href="####">1000-1500</a>
+	        					<a href="####">1500-2000</a>
+	        					<a href="####">2000以上</a>
+        					</div>
+        					
+        				</div>       				
+        			</div>
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：行政区域筛选
+                    -->
+        			<div class="tjzfsx">
+        				<span>行政区域</span>
+        				<div class="fjjg_xqfl">
+        					<div class="fenleiqh">
+        						<a href="####" class="tjsx_a_ed" >不限</a>
+	        					<a href="####">徐汇</a>
+	        					<a href="####">长宁</a>
+	        					<a href="####">静安</a>
+	        					<a href="####">普陀</a>
+	        					<a href="####">闸北</a>
+	        					<a href="####">虹口</a>
+	        					<a href="####">杨浦</a>
+	        					<a href="####">闵行</a>
+	        					<a href="####">宝山</a>
+	        					<a href="####">嘉定</a>
+	        					<a href="####">浦东</a>
+	        					<a href="####">金山</a>
+	        					<a href="####">松江</a>
+	        					<a href="####">青浦</a>
+	        					<a href="####">奉贤</a>
+	        					<a href="####">崇明县</a>
+	        					<a href="####">卢湾</a>
+	        					<a href="####">上海花桥</a>
+        					</div>
+        					<div class="xxdlxz xzqy_ej">
+        						<a href="####" class="tjsx_a_ed">全部</a>
+        						<a href="####">C曹家渡</a>
+        						<a href="####">J静安寺</a>
+        						<a href="####">江宁路</a>
+        						<a href="####">N南京西路</a>
+        					</div>	
+        				</div>       				
+        			</div>
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：地铁沿线
+                    -->
+        			<div class="tjzfsx">
+        				<span>地铁沿线</span>
+        				<div class="fjjg_xqfl">
+        					<div class="fenleiqh">
+        						<a href="####"  class="tjsx_a_ed" >1号线</a>
+        						<a href="####">2号线</a>
+        						<a href="####">3号线</a>
+        						<a href="####">4号线</a>
+        						<a href="####">5号线</a>
+        						<a href="####">6号线</a>
+        						<a href="####">7号线</a>
+        						<a href="####">8号线</a>
+        						<a href="####">9号线</a>
+        						<a href="####">10号线</a>
+        						<a href="####">11号线</a>
+        						<a href="####">12号线</a>
+        						<a href="####">13号线</a>
+        					</div>
+        					
+        				</div>       				
+        			</div>
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：租住方式
+                    -->
+                    <div class="tjzfsx">
+        				<span>租住方式</span>
+        				
+        				<div class="fjjg_xqfl">
+        					<div class="fenleiqh">
+        						<a href="####"  class="tjsx_a_ed" >不限</a>
+        						<a href="####">合租</a>
+        						<a href="####">整租</a>
+        						<a href="####">公寓</a>
+        					</div>       					
+        				</div>       				
+        			</div>
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：房屋特点
+                    -->
+                    <div class="tjzfsx">
+        				<span>房间特点</span>
+        				<div class="fjjg_xqfl fwtdysqh">
+        					<a href="####"  class="tjsx_a_ed" >不限</a>
+        					<a href="####" >独立卫生间</a>
+        					<a href="####" >带阳台</a>
+        					<a href="####" >带飘窗</a>
+        					<a href="####" >有厨房</a>
+        					<a href="####" >落地窗</a>
+        					<a href="####" >可住二人</a>
+        				</div>       				
+        			</div>
+        			
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：可租日期
+                    -->
+                    <div class="tjzfsx">
+        				<span>可租日期</span>
+        				<div class="fjjg_xqfl">
+        					<div class="fenleiqh">
+        						<a href="####"  class="tjsx_a_ed" >不限</a>
+        						<a href="####">立即可租</a>
+        						<a href="####">一周内可租</a>
+        						<a href="####">两周内可租</a>
+        						<a href="####">一月内可租</a>
+        					</div>  
+        				</div>       				
+        			</div>
+        			
+        			<!--
+                    	作者：yuechunqiu@163.com
+                    	时间：2017-09-08
+                    	描述：筛选条件
+                    -->
+                    <div class="tjzfsx">
+        				<span>筛选条件</span>
+        				<div class="diplay_inline_block sxtj">
+        					
+        					<span>
+        						700-100
+        						<a href="####">X</a>
+        					</span>
+        					<span>
+        						徐汇
+        						<a href="####">X</a>
+        					</span>
+        				</div>     				
+        			</div>        			
+        		</div>       		
+        	</div>       	
+        	
+        </div>
+
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-11
+        	描述：我要租房排序
+       -->
+        <div class="width_twelve block_center wyzfpx" id="wyzfpx">
+        	<ul class="wyzfpx_list ">
+        		<li class="zfpxlist_ed">
+        			<a href="####">综合排序</a>
+        		</li>
+        		<li>
+        			<a href="####">价格从低到高</a>
+        		</li>
+        		<li>
+        			<a href="####">价格从高到低</a>
+        		</li>
+        		<li>
+        			<a href="####">面积从大到小</a>
+        		</li>
+        	</ul>       	
+        </div>
+
+        
+        <!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-11
+        	描述：我要租房列表
+        -->
+        <div class="width_big text_center" id="wyzflb">
+			<div class="index_zs">
+				<div class="diplay_inline_block wyzf_zd_link">
+					<ul>
+						<li>
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_1.jpg"/>
+								<a href="wyzf_xq.html"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img src="img/dizhi_icon.png" />宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li>
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_2.jpg"/>
+								<a href="wyzf_xq.html"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img src="img/dizhi_icon.png" />宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li>
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_3.jpg"/>
+								<a href="wyzf_xq.html"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img src="img/dizhi_icon.png" />宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li>
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_4.jpg"/>
+								<a href="wyzf_xq.html"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img src="img/dizhi_icon.png" />宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li>
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_5.jpg"/>
+								<a href="wyzf_xq.html"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img src="img/dizhi_icon.png" />宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						<li>
+							<div class="zs_img zsa_box">
+								<img src="img/hezu_img_1.jpg"/>
+								<a href="wyzf_xq.html"></a>
+							</div>
+							<div class="zs_title text_left">
+								<h3>四居室-朝南-B房间四居室-朝南-B房间四居室-朝南-B房间</h3>
+								<p>
+									<img src="img/dizhi_icon.png" />宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林宝山区-祁华路125号保利叶之林
+								</p>
+								<span>
+									￥2500/<u>月</u>
+								</span>
+							</div>
+							<div class="zs_xqnm">
+								港馨家园
+							</div>
+						</li>
+						
+					</ul>
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="width_twelve subpage_page text_center" id="subpage_pgae">
+				<ul class="diplay_inline_block subpage_list"> 
+					<li>
+						<a href="####">
+							 
+						</a>	
+					</li>
+					<li class="subpage_ed">
+						<a href="####">
+							 1
+						</a>	
+					</li>
+					<li>
+						<a href="####">
+							 2
+						</a>	
+					</li>
+					<li>
+						<a href="####">
+							3 
+						</a>	
+					</li>
+					<li>
+						<a href="####">
+							4 
+						</a>	
+					</li>
+					<li>
+						<a href="####">
+							5 
+						</a>	
+					</li>
+					<li>
+						<a href="####">
+							 6
+						</a>	
+					</li>
+					<li>
+						<a href="####">
+							 
+						</a>	
+					</li>
+				</ul>
+		</div>
+       
+		<!--
+        	作者：yuechunqiu@163.com
+        	时间：2017-09-07
+        	描述：优质房源推荐
+      -->
+       <div class=" block_center yzfytj_box" id="yzfytj_box">
+       		<iframe src="youzhifytj.html"></iframe>
+       </div>
+
+		<!--
+      	作者：yuechunqiu@163.com
+      	时间：2017-09-07
+      	描述：页脚
+      -->
+		<div class="width_big footer" id="footer">
+			<iframe src="footer.html"></iframe>
+		</div>
+		
+
+	</body>
+</html>

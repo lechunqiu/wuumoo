@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>梧陌公寓</title>
+		<meta name="Description" content="长租公寓" />
+		<meta name="Keywords" content="梧陌公寓,长租公寓,酒店式公寓" />
+		<link rel="stylesheet" href="css/wumo_style.css" />
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wm_all.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<header id="index_top">
+			<div class="width_twelve">
+				<div class="logo diplay_inline_block">
+					<a v-bind:href="logo_url"><img v-bind:src="logo_img_src" /></a>
+				</div>
+				<div class="top_city diplay_inline_block">
+					<select v-model="citySelect">
+						<option v-for="option in options" v-bind:value="option.value">
+							{{option.text}}
+						</option>
+					</select>
+				</div>
+				<div class="index_nav diplay_inline_block">
+					<ul>
+						<li v-for="(navitem,index) in nav" v-bind:class="navNumber===index?'nav_active':''">
+							<a v-bind:href="navitem.href" target="_parent">{{navitem.text}}</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_dlzc diplay_inline_block right">
+					<!--<a v-bind:href="dl_href">{{dl}}</a>
+					<a v-bind:href="zc_href">{{zc}}</a>-->
+					<a v-bind:href="grzx_href">
+						{{grzx}}
+						<div class="top_ewm">
+							<img src="img/footer_ewm.jpg"/>
+							<p>
+								扫一扫进入个人中心
+							</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</header>
+
+		<script type="text/javascript">
+			function UrlSearch() {
+				var name, value;
+				var str = location.href; //取得整个地址栏
+				var num = str.indexOf("?")
+				str = str.substr(num + 1); //取得所有参数   stringvar.substr(start [, length ]
+
+				var arr = str.split("&"); //各个参数放到数组里
+				for(var i = 0; i < arr.length; i++) {
+					num = arr[i].indexOf("=");
+					if(num > 0) {
+						name = arr[i].substring(0, num);
+						value = arr[i].substr(num + 1);
+						this[name] = value;
+					}
+				}
+			}
+			var Request = new UrlSearch(); //实例化
+			
+			var indexTop = new Vue({
+				el: '#index_top',
+				data: {
+					logo_url: 'index.html',
+					logo_img_src: 'img/top_logo.png',
+					citySelect: '0',
+					options: [{
+							text: '上海',
+							value: '0'
+						},
+						{
+							text: '杭州',
+							value: '1'
+						},
+						{
+							text: '北京',
+							value: '2'
+						}
+					],
+					nav: [{
+							href: 'index.html',
+							text: '首页'
+						},
+						{
+							href: 'woyaozufang.html',
+							text: '我要租房'
+						},
+						{
+							href: 'qingnianshequ.html',
+							text: '青年社区'
+						},
+						{
+							href: 'fangwutuoguan.html',
+							text: '房屋托管'
+						},
+						{
+							href: 'wuyehezuo.html',
+							text: '物业合作'
+						},
+						{
+							href: 'jingcaishenghuo.html',
+							text: '精彩生活'
+						},
+						{
+							href: 'guanyuwumo.html',
+							text: '关于梧陌'
+						}
+					],
+					navNumber: 0,
+					/*dl_href: 'denglu.html',
+					dl: '登录',
+					zc_href: 'zhuce.html',
+					zc: '注册',*/
+					grzx_href:'####',
+					grzx:'个人中心'
+
+				}
+				/*,
+								methods:{
+									changeNavNo:function(){
+										this.navNumber=1;
+									}
+								}*/
+
+			})
+			
+			indexTop.navNumber = parseInt(Request.navNo)
+			/*alert(Request.navNo)*/
+			/*alert(window.location.pathname)*/
+		</script>
+
+	</body>
+
+</html>
